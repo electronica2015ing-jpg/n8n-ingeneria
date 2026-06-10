@@ -8,4 +8,4 @@ services:
       - key: NODE_VERSION
         value: "20"
       - key: N8N_ENCRYPTION_KEY
-        generate: true
+        value: "mi-clave-super-secreta-12345"
