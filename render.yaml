@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: n8n-servicio
+    runtime: node
+    buildCommand: "npm install -g pnpm && pnpm install --frozen-lockfile"
+    startCommand: "n8n start"
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: N8N_ENCRYPTION_KEY
+        generate: true
